@@ -19,9 +19,9 @@ timestamp(){
     date "+%F %T"
 }
 
-valudate(){
+validate(){
     if [ $1 -ne 0]; then
-        echo -e "${timestaamp} [ERROR] ${2}..${R}FAILED${N}" | tee -a $logs_file
+        echo -e "${timestamp} [ERROR] ${2}..${R}FAILED${N}" | tee -a $logs_file
         exit 1
     else
         echo -e "${timestamp} [INFO] ${2}..${G}SUCCESS${N}" | tee -a $logs_file
