@@ -15,7 +15,7 @@ fi
 
 mkdir -p $logs_folder
 
- echo "Scipt started execution at $(date + %F %T")" &>> $logs_file
+ echo "Scipt started execution at $("date + %F %T")" &>> $logs_file
 
  validate(){
     if [ $1 -ne 0 ]; then
