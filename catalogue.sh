@@ -5,6 +5,13 @@ logs_folder="/var/log/roboshop"
 logs_file="${logs_folder}/${0}.log"
 domain_name="ragy.online"
 scripts_dir=$(dirname "$(realpath "$0")")
+
+# $ realpath catalogue.sh
+# /c/Dev/Git/shell-roboshop-v1/catalogue.sh
+
+# $ dirname /c/Dev/Git/shell-roboshop-v1/catalogue.sh
+# /c/Dev/Git/shell-roboshop-v1
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
